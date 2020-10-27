@@ -36,5 +36,12 @@ public function store(){
 // so with take the 1 argumet msg amd the 2 the what msg likhe the
 // message box in c#
 }
+
+public function destory($id){
+$pizza=Pizza::findOrFail($id);
+$pizza->delete();
+return redirect('/pizzas');
+
+}
 }
 
