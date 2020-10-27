@@ -24,6 +24,8 @@
 
 
                 </div>
+                <p class="mssg">{{session('mssg')}}</p>
+                <br>
                 <a href="/pizzas/create"> Order the Pizza</a>
 
             </div>
