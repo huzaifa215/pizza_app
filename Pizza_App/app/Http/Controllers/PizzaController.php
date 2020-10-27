@@ -27,6 +27,7 @@ public function store(){
     $pizza->name=request('name');
     $pizza->type=request('type');
     $pizza->base=request('base');
+    $pizza->toppings=request('toppings');
 // error log i used to see the data on the terminal to staisfi oweselef
     $pizza->save();
     // The Pizza model have only one tabel so by saving the data the data is updating the table

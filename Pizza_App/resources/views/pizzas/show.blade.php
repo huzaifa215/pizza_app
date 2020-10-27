@@ -1,6 +1,7 @@
 
 @extends('layouts.layout')
 @section('content')
+<link href="/css/main2.css" rel="stylesheet">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -21,8 +22,15 @@
                   <div clas="wapper pizza-details">
                       <h1>Order for {{$pizza->name}}</h1>
                       <p class="type">Type of Pizza--{{$pizza->type}}</p>
-                      <p class="type">Base of Pizza--{{$pizza->base}}</p>
+                      <p class="base">Base of Pizza--{{$pizza->base}}</p>
+                      <p class="toppings">Extra toppings:</p>
+                      <ul>
+                          @foreach ($pizza->toppings as $topping)
+                            <li>{{$topping}}</li>
+                          @endforeach
+                      </ul>
                 </div>
+                <br>
                 <a href="/pizzas" class="back"><button>Back to all Pizzas</button></a>
 
 

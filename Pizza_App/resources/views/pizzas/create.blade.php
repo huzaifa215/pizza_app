@@ -46,8 +46,15 @@
                             <option value="thin & crust">Thin And Crust</option>
                             <option value="thick">Thick</option>
                         </select>
-                        <br>
-                        <br>
+
+                        <fieldset>
+                            <label>Extra Toppings:</label><br>
+                            <input type="checkbox" name='toppings[]' value="mushrooms">Mushrooms<br />
+                            <input type="checkbox" name='toppings[]' value="peppers">Peppers<br />
+                            <input type="checkbox" name='toppings[]' value="garlic">Garlic<br />
+                            <input type="checkbox" name='toppings[]' value="olives">Olives<br />
+
+<br>
                         <input type="submit" value="Order Pizza">
                      </form>
 
