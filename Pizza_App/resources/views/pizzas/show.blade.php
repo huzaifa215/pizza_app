@@ -1,3 +1,4 @@
+
 @extends('layouts.layout')
 @section('content')
         <div class="flex-center position-ref full-height">
@@ -16,14 +17,17 @@
             @endif
 
             <div class="content">
-            <img src="/images/download.png" alt="pizza house logo">
                 <div class="title m-b-md">
-
-
-                    The Pakistan best Pizza House
+                  <div clas="wapper pizza-details">
+                      <h1>Order for {{$pizza->name}}</h1>
+                      <p class="type">Type of Pizza--{{$pizza->type}}</p>
+                      <p class="type">Base of Pizza--{{$pizza->base}}</p>
                 </div>
+                <a href="/pizzas" class="back"><button>Back to all Pizzas</button></a>
 
 
             </div>
+        </div>
+
         </div>
         @endsection

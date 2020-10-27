@@ -1,3 +1,4 @@
+
 @extends('layouts.layout')
 @section('content')
         <div class="flex-center position-ref full-height">
@@ -16,11 +17,8 @@
             @endif
 
             <div class="content">
-            <img src="/images/download.png" alt="pizza house logo">
                 <div class="title m-b-md">
-
-
-                    The Pakistan best Pizza House
+                 Add a pizza
                 </div>
 
 

@@ -1,3 +1,4 @@
+
 @extends('layouts.layout')
 @section('content')
         <div class="flex-center position-ref full-height">
@@ -16,13 +17,20 @@
             @endif
 
             <div class="content">
-            <img src="/images/download.png" alt="pizza house logo">
                 <div class="title m-b-md">
-
-
-                    The Pakistan best Pizza House
+                  Pizzas List
                 </div>
+                 {{-- <!-- @for($i=0;$i< count($pizzas);$i++)
 
+                <p>{{$pizzas[$i]['type']}}</p>
+                @endfor --> --}}
+
+                @foreach($pizzas as $pizza)
+                <div>
+                    {{$pizza->name}} -- {{$pizza->base}} -- {{$pizza->type}}
+                </div>
+                <br>
+                @endforeach
 
             </div>
         </div>
