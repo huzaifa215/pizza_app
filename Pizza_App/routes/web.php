@@ -21,6 +21,7 @@ return view('welcome');
 Route::get('/pizzas','PizzaController@index');
     // data from the route handler to the view
     Route::get('/pizzas/create' ,'PizzaController@create');
+    Route::post('/pizzas','PizzaController@store');
 Route::get('/pizzas/{id}','PizzaController@show');
 
 

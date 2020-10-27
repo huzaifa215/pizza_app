@@ -22,7 +22,10 @@
                     <center>
                  <div class="wapper create-pizza>">
                      <h1>Create a pizza for the order</h1>
-                     <from action="/pizzas" method="POST">
+                     <form action="/pizzas" method="POST">
+                        {{-- cross side requsest  to handel 419 erore--}}
+                        @csrf
+
                          <label for="name">Your name :</label>
                          <input type="text" id="name" name="name">
 <br>
@@ -46,7 +49,7 @@
                         <br>
                         <br>
                         <input type="submit" value="Order Pizza">
-                     </from>
+                     </form>
 
 
 
